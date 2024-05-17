@@ -84,7 +84,7 @@ const apiKey
 			   line += `<td>${playerHours}:${playerMinutes}:${playerTime}</td>`;
 			   line += `<td>${date}</td>`;
 			   line += `<td>${gameVersion}</td>`;
-			   line += `<td><a href="${videoLink}">Link Here</td></tr>`;
+			   line += `<td><a href="${videoLink}">Link</td></tr>`;
 			   bigLine += line;
 		   }
 		   return bigLine;
