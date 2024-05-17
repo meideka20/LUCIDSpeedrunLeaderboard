@@ -1,0 +1,123 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/*Making things the fonts I want*/
+h1{
+    font-family: "Teko";
+    font: size 30px;
+    width:100%;
+}
+
+h2{
+    font-family: "Teko";
+    font: size 24px;;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*This is all of the header things*/
+header{
+    display:flex;
+    flex-direction: column;
+    background-color: #000000;
+    top:0px;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px #7575E8;
+}
+
+/*This is all of the body things*/
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: #000000;
+    margin:0px;
+}
+
+#leaderboards{
+    display:flex;
+    flex-flow:row wrap;
+    align-items: center;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+}
+
+#leaderboards h2{
+    width:100%;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px #7575E8;
+}
+
+#leaderboards div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-style:none;
+    width:40%;
+    max-height:35vw;
+    margin-bottom:1rem;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#anyPercent {
+    grid-area:table;
+    margin-right:0px;
+    margin-left:auto;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    font-size: 18px;
+    width:100%;
+}
+
+#anyPercent th, #anyPercent td {
+    text-align: left;
+    padding: 12px;
+    color: #FFFFFF;
+    border-right:1px solid #000000;
+}
+  
+#anyPercent tr {
+    border-bottom: 1px solid #000000;
+    background-color: 	#7A1A47;
+}
+  
+#anyPercent tr.header, #anyPercent tr:hover {
+    background-color: 	#7A1A47;
+}
+
+/*100%*/
+#allPercent {
+    grid-area:table;
+    margin-right:0px;
+    margin-left:auto;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    font-size: 18px;
+    width:100%;
+}
+
+#allPercent th, #allPercent td {
+    text-align: left;
+    padding: 12px;
+    color: #FFFFFF;
+    border-right:1px solid #000000;
+}
+  
+#allPercent tr {
+    border-bottom: 1px solid #000000;
+    background-color: 	#7A1A47;
+}
+  
+#allPercent tr.header, #allPercent tr:hover {
+    background-color: 	#7A1A47;
+}
