@@ -27,7 +27,6 @@ const apiKey
 	   
 			   bigLine += makeRow(allSubmissions);
 			   document.querySelector("#anyPercent").innerHTML += bigLine;
-			   console.log(bigLine);
 		   }
 	   }
 	   
@@ -40,7 +39,6 @@ const apiKey
 	   
 			   bigLine += makeRow(allSubmissions);
 			   document.querySelector("#allPercent").innerHTML += bigLine;
-			   console.log(bigLine);
 		   }
 	   }
 	   
@@ -62,7 +60,6 @@ const apiKey
 	   }
 	   
 	   function makeRow(results) {// makes the line of code to inject into the html
-		   console.log(results);
 		   let line;
 		   let bigLine = ``;
 		   for (let i = 0; i < results.length; i++) {
@@ -71,10 +68,22 @@ const apiKey
 			   let playerName = result.username;
 			   let playerTime = result.time;
 			   let playerHours = parseInt(playerTime/3600);
+               if(playerHours < 10)
+               {
+                    playerHours = "0" + playerHours;
+               }
 			   playerTime -= playerHours * 3600;
 			   let playerMinutes = parseInt(playerTime/60);
+               if(playerMinutes < 10)
+               {
+                    playerMinutes = "0" + playerMinutes;
+               }
 			   playerTime -= (playerMinutes * 60);
-			   playerTime = playerTime.toFixed(3);
+			   playerTime = playerTime.toFixed(2);
+               if(playerTime < 10)
+               {
+                    playerTime = "0" + playerTime;
+               }
 			   let date = result.date;
 			   let gameVersion = result.version;
 			   let videoLink = result.videoLink;
